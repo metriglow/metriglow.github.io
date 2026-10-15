@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MetriGlow Analytics security, data protection, customer access and vulnerability reporting information.">
+<title>Security | MetriGlow Analytics</title><link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="site-header"><div class="wrap"><a class="wordmark" href="index.html" aria-label="MetriGlow home">Metri<span>Glow</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="launch.html">Client access</a><a href="connect.html">QuickBooks</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+
+<main class="wrap legal">
+<span class="eyebrow">Data protection &amp; security</span>
+<h1>Security at MetriGlow</h1>
+<p class="small">Last reviewed: October 2026</p>
+<p>MetriGlow Analytics provides business reporting and data integration services from Calgary, Alberta, Canada. We recognize that accounting and operational records may contain confidential business information and personal information. This page explains how we approach security, what is currently in use, and what is still being developed.</p>
+<p><strong>Current service status:</strong> Our QuickBooks integration is in Sandbox development and production authorization is not yet live. This is a description of our security approach, <strong>not</strong> a claim of Intuit approval, external security certification, completion of a penetration test, or full implementation of every control discussed below.</p>
+
+<h2>1. Protecting customer information</h2>
+<p>We use information supplied or authorized by a client to build and maintain the agreed reporting service. We do not sell QuickBooks data, use client financial records for behavioural advertising, or intentionally make client data available to unrelated parties. Access by supporting service providers is limited to purposes involved in delivering the service, subject to applicable agreements, permissions, and laws. See our <a href="privacy.html">Privacy Policy</a> for information about personal data and service providers.</p>
+
+<h2>2. Access control and client separation</h2>
+<p>Our Azure reporting architecture is organized around client-specific application identities, data schemas, and Power BI workspaces. This is intended to restrict each client’s data and reporting access to that client’s authorized environment. Access is assigned for defined roles and we review permissions as client configurations change. Technical separation is one layer of security; it does not replace reviewing effective permissions and testing the application.</p>
+<p>We do not provide a public client login on this website. Access to a reporting workspace or a QuickBooks company must be established through the relevant provider and the client's authorized administrator.</p>
+
+<h2>3. Secure connections and sensitive credentials</h2>
+<p>Our public website is served using HTTPS. Data services use their providers' managed transport and storage security features; core reporting infrastructure includes Microsoft Azure. Production credentials and tokens must remain in restricted backend systems, not in browser scripts, public repositories, emailed links, customer dashboards, or routine logs.</p>
+<p>When production QuickBooks connections are available, we intend to use Intuit's OAuth authorization flow. An authorized company administrator will be directed to Intuit to grant access; MetriGlow will not ask for the administrator's QuickBooks password or verification code. Before launch, we are completing callback protection, secure credential storage, token refresh, access revocation, and production testing. We do not claim those features are operational today.</p>
+
+<h2>4. Application and infrastructure security</h2>
+<p>Our development and deployment process is intended to address secure configuration, software updates, encrypted connections, input validation, and appropriate HTTP behaviour. Security review must include risks such as unauthorized access, cross-site request forgery, cross-site scripting, injection attacks, unsafe redirects, exposed secrets, and unintended caching of sensitive responses. We will validate the actual implementation before enabling production connections.</p>
+<p>Website visitors are not issued MetriGlow application sign-in sessions by these public GitHub Pages. Any future authenticated portal will require its own session management, access controls, and security testing.</p>
+
+<h2>5. Logging, monitoring, and vulnerability reports</h2>
+<p>We aim to keep diagnostic records focused on service health and troubleshooting rather than the content of financial records, passwords, tokens, or other secrets. Log access and retention depend on the relevant hosting service and operational settings. We review issues discovered during testing or reported by customers, investigate the impact, and prioritize appropriate fixes. We do not represent that an independent penetration test or formal third-party audit has been completed.</p>
+<p>If you believe you have found a security problem, please report it privately to <a href="mailto:metriglow@outlook.com?subject=Confidential%20security%20report">metriglow@outlook.com</a>. Include what you observed and a safe way to contact you. Please avoid sending passwords, access tokens, or copies of client financial records in your report. Do not test against another company's systems or data without authorization.</p>
+
+<h2>6. Security incidents</h2>
+<p>We assess reports of suspected unauthorized access, data disclosure, or service disruption, and work to contain issues, secure affected systems, identify the impact, and take reasonable corrective action. We intend to notify affected customers, platform providers, and authorities when required by applicable law or agreement. Any response timeline or notification obligations must be assessed against the circumstances and applicable requirements.</p>
+
+<h2>7. Consent, disconnection, and deletion</h2>
+<p>Clients should control which business systems they authorize for their reporting services. If a customer withdraws authorization, we must stop further access and processing for the affected integration, subject to legal requirements. For connection issues or requests to disconnect, use our <a href="disconnect.html">QuickBooks disconnection guidance</a> and contact us.</p>
+<p>Disconnection alone does not necessarily remove previously stored reports, raw files, backups, or operational logs. To request access, correction, export, or deletion of applicable information, email us. We will verify your authority, assess what is held, and explain what can be removed and what must legally or contractually be retained. We do not promise a universal automatic deletion time before those procedures are implemented and verified.</p>
+
+<h2>8. Service providers and hosting</h2>
+<p>MetriGlow uses third-party services to operate the website and reporting infrastructure, including GitHub Pages and Microsoft cloud services. Where authorized, Intuit or other connected platforms may also be involved. Some service operations or support activities may occur outside Canada. Please see the <a href="privacy.html">Privacy Policy</a> for further context.</p>
+
+<h2>9. How we keep this information current</h2>
+<p>We update our public security information as the service develops and its controls are confirmed. Requirements from providers, including Intuit, may change. Our published policies and contractual commitments do not replace the need to implement, test, and maintain technical safeguards.</p>
+<p>For more information about the standards applicable to QuickBooks developers, see Intuit's <a href="https://developer.intuit.com/app/developer/qbo/docs/go-live/publish-app/security-requirements" rel="noopener noreferrer">developer security requirements</a> and <a href="https://static.developer.intuit.com/output_html/tos/docs/tos.html" rel="noopener noreferrer">Developer Terms of Service</a>. MetriGlow is an independent provider and is not represented as endorsed or security-certified by Intuit.</p>
+
+<h2>10. Contact</h2>
+<p><strong>MetriGlow Analytics</strong><br>Calgary, Alberta, Canada<br><a href="mailto:metriglow@outlook.com">metriglow@outlook.com</a></p>
+</main>
+<footer class="site-footer"><div class="wrap"><p>© 2026 MetriGlow Analytics. Business reporting and analytics.</p><p><a href="mailto:metriglow@outlook.com">metriglow@outlook.com</a></p><div class="footer-links"><a href="privacy.html">Privacy policy</a><a href="terms.html">End-user terms</a></div></div></footer>
+</body></html>
