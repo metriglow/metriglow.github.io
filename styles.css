@@ -33,3 +33,6 @@ h1{font-size:clamp(2.6rem,5vw,4.5rem);line-height:1.12;letter-spacing:-.055em;ma
 .site-footer p{font-size:.85rem;color:var(--muted);margin:0}
 .footer-links{display:flex;gap:18px;font-size:.86rem}
 @media(max-width:670px){.site-header .wrap{flex-direction:column;align-items:flex-start;padding-top:18px;padding-bottom:18px;gap:8px}.hero{padding:64px 0}.grid{grid-template-columns:1fr}.section{padding:50px 0}}
+.cta-link{display:inline-block;background:#087f7b;color:#fff;padding:13px 20px;border-radius:10px;font-weight:750}
+.cta-link:hover,.cta-link:focus{background:#065c5a;color:#fff;text-decoration:none}
+a:focus-visible{outline:3px solid #117e87;outline-offset:4px}
