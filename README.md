@@ -6,6 +6,7 @@ This repository hosts the public informational website for the **MetriGlow** bra
 
 - `index.html` — homepage
 - `privacy.html` — privacy policy
+- `security.html` — public security overview, including incident reports and implementation status
 - `terms.html` — EULA and terms of service
 - `launch.html` — public client landing page (no public account login)
 - `connect.html` — operator-assisted QuickBooks connect/reconnect instructions
@@ -24,7 +25,7 @@ This **public website repository** is separate from the private `metriglow/metri
 
 Edit pages in a development branch, review accuracy, and merge to `main` to publish (assuming Pages is configured for `main`). Update the displayed effective date when materially revising legal policies. Check links after publication.
 
-**Compliance note:** The policy pages describe a small reporting business and developing production QuickBooks integration. Before authorizing access to live client financial records or submitting compliance claims to Intuit, verify your actual security controls, retention/deletion processes, legal business disclosures, provider terms and any required agreement with the client. Website publication is not Intuit production approval or legal certification.
+**Compliance note:** Publishing the security overview is **not** an attestation that Intuit requirements are implemented. Detailed gaps and test evidence belong only in the private application repository. The policy pages describe a small reporting business and developing production QuickBooks integration. Before authorizing access to live client financial records or submitting compliance claims to Intuit, verify your actual security controls, retention/deletion processes, legal business disclosures, provider terms and any required agreement with the client. Website publication is not Intuit production approval or legal certification.
 
 ## Intuit production setup — important
 
